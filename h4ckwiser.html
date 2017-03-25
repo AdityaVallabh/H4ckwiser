@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Roboteex Solutions | Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="img/logo_no_bg.png"/>
+  <script>
+    function check () {
+      var name = document.forms["form1"]["user_name"].value;
+      if (name == "") {
+        alert("Please fill in the name.");
+        return false;
+      }
+      var email = document.forms["form1"]["user_email"].value;
+      if (email == "") {
+        alert("Please enter correct email.");
+        return false;
+      }
+      var num = document.forms["form1"]["user_mobile_no"].value;
+      if (num == "") {
+        alert("Please enter Mobile Number.");
+        return false;
+      }
+      var message = document.forms["form1"]["user_message"].value;
+      if (message == "") {
+        alert("Please enter your queries.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body  onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<header>
+<h1>Weather Info</h1>
+</header>
+<p style=" text-align: center; color: white;" id="heading" ><font face="font"><font size=200%><b><br><br>Tri Hacker Cup</b></font><br><br>H4ckwiser</p></font></font>
+	<section class="one-fourth" id="updates">
+	
+	<section class="inner-wrapper">
+		<aside id="iitb" style="color: white;">
+			<p style="font-size: 125%;"><b></p></b>
+			<section class="one-third" id="address">
+				<font size="200%"><i class="fa fa-map-marker"></i></font>
+
+        
+          <div id="UserArea">
+            <div id="stateWrapper">
+                <input type="text" id="cityInput" placeholder="Enter a State"/>
+            </div>
+            <br/>
+            <div id="countryWrapper">
+                 <input type="text" id="countryInput" placeholder="Enter a Country"/>
+            </div>
+            <br/>
+            <div id="buttonArea">
+                <input type="submit" id="submitWeather"/>
+            </div>
+        </div>
+        <div id="WeatherWrapper">
+        </div>
+        </section>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script> 
+        <script type="text/javascript" src="mainWeather.js"></script>
+        <script type="text/css" src="style.css"></script>
+
+</div>
+<script>
+var myVar;
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>
