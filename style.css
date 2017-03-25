@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
-@import 'fonts/font.otf';
 
 @font-face {
    font-family: font; 
@@ -65,7 +64,8 @@
 
 body{
 	
-	background-image: url('img/bg.jpg');
+	background-image: url('bg.jpg');
+	background-size: 100%;
 	background-opacity: 50%;
 	color: black;
 	font-family: 'font',sans-serif;
@@ -127,8 +127,6 @@ header{
 	padding: 3% 0 0 8%;
 	float: left;
 	width: 150px;
-	height: 150px;
-	background:url('img/logo_no_bg.png') no-repeat right;
 }
 
 /* Start Navgation */
@@ -141,7 +139,6 @@ nav{
 	display: hidden;
 	width: 40px;
 	height: 40px;
-	background: url('img/nav.png') center;
 }
 
 a:hover #menu-icon{
@@ -279,3 +276,14 @@ footer.second{
 .heading{
 	padding: 2% 0 0 0 ;
 }
+
+
+    #map-canvas {
+
+      padding: 500 0 0 0;
+      width: 50%;
+      height: 50%;
+    }
+    .gm-style-iw {
+      text-align: center;
+    }
