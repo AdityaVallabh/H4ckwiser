@@ -92,7 +92,7 @@
   };
   // Take the JSON results and proccess them
   var proccessResults = function() {
-    console.log(this);
+ 
     var results = JSON.parse(this.responseText);
     if (results.list.length > 0) {
         resetData();
@@ -157,24 +157,6 @@
   };
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
 <body  onload="myFunction()" style="margin:0;">
 <div id="loader"></div>
